@@ -7,12 +7,11 @@ class ResPartner(models.Model):
 
     profile_type = fields.Selection(
         selection=[
-            ('pharmacist', 'Farmacéutico'),
             ('patient', 'Paciente'),
             ('employee', 'Empleado'),
             ('doctor', 'Médico'),
             ('intern', 'Interno'),
         ],
-        string='Tipo de Perfil',
+        string='Tipo de Contacto',
         default='patient',
     )
